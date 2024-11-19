@@ -1,0 +1,152 @@
+
+/* Color Palette URL:
+   https://coolors.co/f2d7ee-d3cc0-a5668b-6306d-0e103d
+*/
+
+/* Root variables for colors and fonts */
+:root {
+    --primary-color: #f2d7ee; /* Header background */
+    --secondary-color: #6306d;  /* Footer background */
+    --accent1-color: #d3bcc0; /* Text */
+    --accent2-color: #a5668b; /* Body background */
+    --heading-font: 'Roboto', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+}
+
+/* General Page Styling */
+body {
+    font-family: var(--text-font);
+    line-height: 1.6;
+    margin: 0;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+header img#page-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--accent1-color);
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero img.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero img.article-image {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* History Section */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adventure-images img {
+    width: 180px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+
+
+.raft-ore {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.social-icon {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.social-media {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    opacity: 0.8; 
+}
